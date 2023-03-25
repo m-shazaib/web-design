@@ -1,0 +1,172 @@
+html{
+    font-size: 60%;
+}
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+nav{
+    margin: 4em;
+
+}
+nav ul{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3.6em;
+    margin: 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: uppercase;
+    position:relative;
+}
+nav a.active:before{
+    position:absolute;
+    content:"";
+    width: 35%;
+    height: 1em;
+    border-bottom:2px solid black;
+    bottom: -6px;
+}
+
+main{
+    display: flex;
+    gap: 16em;
+    margin-top: 10em;
+}
+
+.leftcol{
+width: 50%;
+}
+.rightcol{
+    flex-grow: 1;
+}
+h1{
+    font-size: 4.2em;
+    font-family: 'PT Serif', serif;
+    margin: 0;   
+}
+.intro{
+    font-size: 2em;
+    font-family: 'PT Serif', serif;
+}
+
+.btns{
+    display: flex;
+    gap: 4em;
+}
+
+.applybtn{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 3em;
+    padding: 1em 1em;
+}
+.applybtn{
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 3em;
+    padding: 1em 1em;
+    margin-bottom: 2em;
+}
+.status{
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+.para{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 2.2em;
+    position: relative;
+    gap: 4em;
+    padding: 5em;
+}
+.para:before{
+    position: absolute;
+    content:"";
+    background: url('confetti.svg');
+width: 100px;
+height: 100px;
+top: -20px;
+left: -20px;
+z-index: 3;
+}
+.fellows{
+    font-size: 3rem;
+margin: 0;
+font-weight:200;
+font-family: 'Poppins';
+line-height: 100%;
+}
+.aim{
+    font-size: 2.2em;
+    line-height: 100%;
+    margin: 0;
+    font-weight: 300;
+}
+.rightcol{
+    display: grid;
+
+    gap: 1em;
+    grid-template-columns:repeat(2,100%);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "left right"
+    "left bottom" ;
+    
+}
+.pic{
+    
+    display: flex;
+    border-radius: 1em;
+  padding: 1.1em;
+  align-items: end;
+}
+#p1{
+    grid-area: left;
+    background: url(hey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#p2{
+    grid-area: right;
+    background: url(bytewise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#p3{grid-area: bottom;
+    background:url(fellow.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.details{
+    display: flex;
+    
+}
+
