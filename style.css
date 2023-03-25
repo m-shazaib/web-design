@@ -166,7 +166,21 @@ line-height: 100%;
     background-size: cover;
 }
 .details{
+    background-color: aliceblue;
     display: flex;
-    
+    align-items: center;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 100%;
+}
+.pic p{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+}
+.pic a{
+    text-decoration: none;
+    color: black;
 }
 
